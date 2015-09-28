@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/charneykaye/cucumber-surprise.svg?branch=master)](https://travis-ci.org/charneykaye/cucumber-surprise)
+
 # Cucumber Surprise
 
 ## Getting Started
