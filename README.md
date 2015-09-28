@@ -1,10 +1,39 @@
-#Poltergeist 
+[![Build Status](https://travis-ci.org/charneykaye/cucumber-surprise.svg?branch=master)](https://travis-ci.org/charneykaye/cucumber-surprise)
+
+# Cucumber Surprise
+
+## Getting Started
+
+From within the main project folder, install all the Gems specified in the `Gemfile`:
+
+    cd cucumber-surprise
+    bundle install
+
+Then, you'll need to have a Selenium Standalone Server running, in order for Cucumber to interact with the web browser. The officials docs are [here](http://www.seleniumhq.org/download/). For example, download [selenium-server-standalone-2.47.1.jar](http://selenium-release.storage.googleapis.com/2.47/selenium-server-standalone-2.47.1.jar) and run it in the background using Java:
+
+    java -jar selenium-server-standalone-2.47.1.jar
+
+## Running the Tests
+
+Once the Selenium Standalone Server is running in the background, simply run Cucumber to execute all of the tests within the `features/` folder:
+
+    cucumber
+
+Or, to execute one specific test:
+
+    cucumber features/search.feature
+
+Or, to execute one specific test in a specific browser, e.g. `firefox` or `chrome`:
+
+    BROWSER=firefox cucumber features/search.feature
+
+# Poltergeist 
 
 Poltergeist is a headess capybara driver based on PhantomJS. This project is a demonstration of Poltergiest driver in your project. 
 
 
 
-##Pre-requisite 
+## Pre-requisite 
 
 in order to use Poltergeist, You must have PhatomJs installed. It's very easy to install. 
 
@@ -24,7 +53,7 @@ On Ubuntu, you can use basic phantomjs package like this
               
               
 
-#Usage 
+# Usage 
 
 Note: You need to have Ruby 1.9.3 and Capybara 2.1.0 for the latest Poltergeist version. Please make sure you have Ruby 1.9.3 and Capybara 2.1.0 for this Demo.
 
@@ -62,6 +91,7 @@ There are few option in the sinatra_step_definition file. You can comment out an
          #puts page.driver.cookies
          #puts page.response_headers.to_a
          
+
 ### Customising Poltergeist Options 
 
 You can customise Poltergeist with multiple options like JS error, debug, timeout and many more as mentioned on Poltergiest documentation
@@ -74,23 +104,9 @@ Take a look at features/Support/env.rb file how options are configured. you can 
                  :debug => false,
                  :phantomjs_options => ['--load-images=no', '--disk-cache=false'],
                  :inspector => true,
-
+    
           Capybara::Poltergeist::Driver.new(app, options)
           end
 
 
 
-
-
-         
-         
-
-
-
-
-
-
-
-
-
-    

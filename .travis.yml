@@ -1,4 +1,3 @@
-language: ruby
 cache: bundler
 
 rvm:
@@ -13,4 +12,4 @@ branches:
 
 notifications:
   email:
-    - shashikant.jagtap@aol.co.uk
+    - charney@outright.io
