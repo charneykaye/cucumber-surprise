@@ -13,3 +13,6 @@ branches:
 notifications:
   email:
     - charney@outright.io
+
+env:
+  - CAPYBARA_DRIVER=poltergeist
