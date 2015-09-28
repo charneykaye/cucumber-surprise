@@ -1,7 +1,7 @@
 require 'faker'
 
 Given(/^a computer navigates to google search$/) do
-  @driver.navigate.to "https://www.google.com/"
+  puts  visit "https://www.google.com"
 end
 
 When(/^a computer searches for "(.*)"$/) do |searchtext|
