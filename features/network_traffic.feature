@@ -3,7 +3,6 @@ Feature: Network traffic with all resources with Poltergeist
   As a capybara and poltergeist user
   I want to see the if it can load all resources using
 
-
 Scenario: View home page and list all loaded resources
   Given I am on the BBC home page
   When I called network traffic using Poltergeist
